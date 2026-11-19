@@ -1,0 +1,10 @@
+project: savantenvs/tinyexpr
+target: repl
+
+cmds:
+  - cmd: /mayhem/repl
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/repl/testsuite

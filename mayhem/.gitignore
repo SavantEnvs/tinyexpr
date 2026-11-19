@@ -1,0 +1,3 @@
+out/
+# upstream .gitignore ignores "repl" (its binary) at any depth; keep the repl seed corpus
+!repl/

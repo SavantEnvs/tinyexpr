@@ -1,0 +1,11 @@
+project: savantenvs/tinyexpr
+target: fuzz_te_compile
+
+cmds:
+  - cmd: /mayhem/fuzz_te_compile
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_te_compile/testsuite
